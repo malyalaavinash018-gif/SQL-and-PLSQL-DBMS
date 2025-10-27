@@ -1,5 +1,18 @@
-/*
-Author : Jaydatt Patel
+/*CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Orders (inash
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+Author : Avinash Sharma
 
 The join clause allows us to retrieve data from two or more related tables into a 
 meaningful result set. We can join the table using a SELECT statement and a join condition. 
